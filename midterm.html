@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/midterm_style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="page">
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h2>
+        <p class="main1"></p>
+        <p class="main2"></p>
+        <button id="prev">Previous Page</button>
+        <button id="next">Next Page</button>
+      </div>
+      <div id="results" style="display: none;">
+        <h1 class="name"></h1>
+        <b>Total Price: ¥ </b><span class="total_price"></span><br></br>
+        <b>Area: </b><span class="area"></span> square meter<br></br>
+        <b>Price / square meter: ¥ </b><span class="price_perm2"></span><br></br>
+        <b>Bedrooms: </b><span class="bedrooms"></span><br>  </br>
+        <b>Floor: </b><span class="floor"></span><br></br>
+        <b>Built Year: </b><span class="builtyear"></span><br></br>
+        <b>Within school District: </b><span class="school_district"></span><br></br>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <button id="close">X</button>
+    <!-- Legend -->
+    <div class="legend" id="box_schooldistrict" style="display: none;"></div>
+    <div class="legend" id="box_year" style="display: none;"></div>
+    <div class="legend" id="schooldistrict1" style="display: none;"></div>
+    <div class="legend" id="schooldistrict0" style="display: none;"></div>
+    <div class="legend" id="y1980" style="display: none;"></div>
+    <div class="legend" id="y1980-1990" style="display: none;"></div>
+    <div class="legend" id="y1990-2000" style="display: none;"></div>
+    <div class="legend" id="y2000-2010" style="display: none;"></div>
+    <div class="legend" id="y2010" style="display: none;"></div>
+    <label class="legend" id="schooldistrict" style="display: none;">Within School District<br>Outside School District<br></label>
+    <label class="legend" id="year" style="display: none;"> < 1980 <br> 1980 - 1990 <br> 1990 - 2000 <br> 2000 - 2010 <br> > 2010 </label>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/midterm.js"></script>
+  </body>
+</html>
